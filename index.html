@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .wrapper {
+      height: 100svh;
+      background: var(--Light-gray);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 280px;
+      height: 440px;
+      padding: 1rem;
+      background-color: var(--White);
+      border-radius: 16px;
+      box-shadow: var(--Light-gray) 0px 48px 100px 0px;
+    }
+
+    .card .content img {
+      width: 100%;
+      display: block;
+      border-radius: 9px;
+    }
+    .card .content .head {
+      font-weight: 700;
+      color: var(--Dark-blue);
+      padding-inline: 1.1rem;
+      text-align: center;
+      font-family: "Outfit", sans-serif;
+    }
+
+    .card .content .text {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--Grayish-blue);
+      padding-inline: 1.2rem;
+      font-family: "Outfit", sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="content">
+        <img src="images/image-qr-code.png" alt="">
+        <h3 class="head">Improve your front-end skills by building projects</h3>
+        <p class="text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
